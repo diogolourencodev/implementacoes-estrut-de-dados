@@ -88,21 +88,14 @@ A lista encadeada mantém os pacotes que estão circulando na rede.
 ## Como Compilar
 
 ```bash
-gcc exercicio5.c -o exercicio5
-```
-
-## Como Executar
-
-### Linux
-
-```bash
-./exercicio5
+cd Exercicio5_Redes
+gcc *.c -o exercicio5
 ```
 
 ### Windows
 
 ```bash
-exercicio5.exe
+.\exercicio5.exe
 ```
 
 ---
