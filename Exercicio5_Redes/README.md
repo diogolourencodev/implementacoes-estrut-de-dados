@@ -128,19 +128,19 @@ gcc *.c -o exercicio5
 
 ### 1. Por que a fila representa bem a transmissão de pacotes?
 
-Porque os pacotes são enviados na mesma ordem em que chegam à rede (FIFO).
-
+ A estrutura de fila é ideal porque opera sob o princípio FIFO (First-In, First-Out), onde o primeiro pacote a chegar à interface de rede é obrigatoriamente o primeiro a ser transmitido. Isso simula com precisão o comportamento real dos buffers de roteadores e switches, garantindo a ordem cronológica do fluxo de dados e mantendo o sequenciamento correto na entrega dos pacotes.
+ 
 ### 2. Por que a pilha pode representar retransmissão?
 
-Porque o último pacote que apresentou erro pode ser tratado primeiro (LIFO).
+A pilha adota a lógica LIFO (Last-In, First-Out), o que significa que o último pacote a sofrer uma falha de transmissão é posicionado no topo da estrutura. Em cenários de rede, tratar o erro mais recente de forma prioritária permite liberar rapidamente janelas de recepção travadas e interromper gargalos temporários, isolando a falha imediata antes de retomar o fluxo de pacotes mais antigos.
 
 ### 3. Por que a lista encadeada ajuda no controle de pacotes ativos?
 
-Porque permite adicionar e remover pacotes dinamicamente durante a transmissão.
+Diferente de vetores estáticos, a lista encadeada aloca memória dinamicamente por meio de ponteiros, permitindo monitorar pacotes em trânsito cujos ciclos de vida são imprevisíveis. Como os pacotes ativos possuem metadados oscilantes (ID, Origem, Destino e Status), a lista encadeada possibilita inserir novos pacotes em circulação e remover registros de pacotes entregues em qualquer posição da estrutura com custo computacional otimizado, sem a necessidade de deslocar os outros elementos na memória.
 
 ### 4. Qual estrutura melhor representa atraso de fila?
 
-A fila, pois o tempo de espera aumenta conforme mais pacotes entram nela.
+A própria estrutura de Fila. O atraso de fila ocorre quando a taxa de chegada de pacotes supera a capacidade de escoamento do enlace de transmissão. A fila modela matematicamente esse atraso, pois o tempo de permanência de um novo pacote na estrutura é diretamente proporcional à soma do tamanho de todos os pacotes que já estavam aguardando atendimento à sua frente.
 
 ## Aprendizados
 
