@@ -1,5 +1,13 @@
 # Exercício 5 - Simulação de Redes de Computadores
 
+## Autores: 
+Angelo Pereira Rocha 
+Thiago Guimarães 
+Diogo S. Lourenço 
+Matheus Dias Moutinho
+Victor Hugo Sanches
+Victor Hugo nascimento
+
 ## Introdução
 
 Em uma rede de computadores, os dados são divididos em pacotes que trafegam entre dispositivos até chegar ao destino. Durante esse processo, os pacotes podem aguardar transmissão, sofrer falhas ou serem entregues com sucesso.
