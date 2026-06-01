@@ -95,7 +95,7 @@ gcc *.c -o exercicio5
 ### Windows
 
 ```bash
-.\exercicio5.exe
+./exercicio5
 ```
 
 ---
