@@ -1,12 +1,13 @@
 # Exercício 5 - Simulação de Redes de Computadores
 
-## Autores: 
-Angelo Pereira Rocha 
-Thiago Guimarães 
-Diogo S. Lourenço 
-Matheus Dias Moutinho
-Victor Hugo Sanches
-Victor Hugo nascimento
+## Autores
+
+- Angelo Pereira Rocha
+- Thiago Guimarães
+- Diogo S. Lourenço
+- Matheus Dias Moutinho
+- Victor Hugo Sanches
+- Victor Hugo Nascimento
 
 ## Introdução
 
